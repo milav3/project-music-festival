@@ -1,0 +1,16 @@
+# Local logs and environment files
+debug.log
+.env
+.env.*
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+Desktop.ini
+
+# Local database backups and exports
+*.sql.bak
+*.dump
+core/database/muzickifestival (1).sql

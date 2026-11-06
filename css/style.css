@@ -1,0 +1,529 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none !important;
+    color:#16292b;
+    font-family: 'Cinzel', serif;
+    font-weight: bold !important;
+
+}
+body {
+    font-family: Arial;
+    font-size: 0.8em;
+    width: 100%;
+    overflow-x: hidden;
+    /*background: #2b3b4a14 !important;*/
+    background-image: url('../Slike/b5.jpg');
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+
+}
+ul {
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-weight: normal;
+    list-style-type: none;
+
+}
+
+h1, h2 {
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-weight: normal;
+}
+
+p {
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+header a:link,header a:visited {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.anketa{
+    color: rgb(11, 180, 11) !important;
+    text-decoration: underline;
+}
+a:link, a:visited {
+    color: white;
+}
+.list-menu{
+    float: right;
+}
+
+ul li {
+    padding: 3px 0;
+}
+/* Headers */
+h1 {
+    font-size: 1.8em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+/* Logo*/
+.logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 100px
+}
+
+header {
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto 10px auto;
+    background: #0d141a21;
+    
+}
+
+header ul{
+    display: inline-flex;
+    margin: 0px;
+}
+
+header ul li nav ul li{
+    height: 20px;
+    width: 100px;
+    text-align: center;
+    
+}
+
+header ul li#menu{
+    margin-left: 10px; 
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.menu_li .menu_link{
+    font-size: 15px;
+    transition: font-size 0.9s ease;
+}
+.menu_li:hover .menu_link{
+    font-size: 17px;
+}
+
+/* Stil za dropdown meni */
+.dropdown-menu .dropdown-item{
+    color: white;
+}
+.dropdown-menu {
+    display: none;
+    top: 5px;
+    right: 0px;
+    background: #2d5055;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    padding: 5px;
+    width: 120px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    position: relative; /* Omogućava da trougao bude deo ovog menija */
+}
+
+/* Dodaj trougao ispod menija */
+.dropdown-menu::after {
+    content: "";
+    position: absolute;
+    top: -10px; /* Postavi ga iznad menija */
+    right: 60px; /* Centriraj ga ispod imena */
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #2d5055 transparent; /* Trougao usmeren ka dole */
+}
+
+/* Obavestenja */
+#notifikacijeDropdown {
+    display: none;
+    position: absolute;
+    background: #ebeaea;
+    color: #16292b;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    padding: 10px;
+    top: 60px;
+    right:195px;
+}
+.badge {
+    background: red;
+    color: white;
+    font-size: 10px;
+    padding: 2px 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    right: 245px;
+}
+
+
+
+/* Containers */
+#container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 60vh;
+    border-radius: 5px 5px 0 0;
+}
+
+.tri_diva{
+    display: inline-flex;
+    width: 32%;
+    justify-content: center;
+    margin: 2px 0px 2px 0px;
+    border-radius: 10px;
+    transition: all 0.9s ease;
+}
+
+.tri_diva:hover{
+    transform: scale(1.2);
+}
+.unutrasnji{
+    width: 90%;
+    text-align: center;
+    height: 400px;
+    margin: 2px 0px 2px 0px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0 20px 35px rgba(0, 0, 1, 0.9);
+}
+
+footer {    
+    background-color: #0d141a21;
+    bottom: 0px;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    color: white;
+    border: none;
+
+}
+
+.footer-a{
+    color: white !important;
+}
+
+footer nav{
+    float: none;
+}
+
+.widget {
+    margin-bottom: 20px;
+}
+
+.widget h2 {
+    margin: 0 0 20px 0;
+    padding: 0 5px;
+    font-weight: normal;
+    border-bottom: 1px solid #5e4263;
+}
+
+.widget .inner {
+    background: #fff;
+    width: 280px;
+    padding: 1rem;
+    margin: 13px auto;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 1, 0.9);
+}
+
+/* Navigation */
+nav {
+    float: left;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li.current {
+    font-weight: bold;
+}
+
+nav ul li a.last {
+    border-right: 0;
+}
+
+nav ul li label{
+    font-size: 15px;
+    color: white;
+
+}
+
+
+/* Aside */
+#login-aside {
+    width: 25%;
+    float: right;
+    border-left: 1px dashed #aaa;
+    padding-left: 15px;
+    transition: all 0.9s ease;
+}
+
+/*login strana*/
+.home-page{
+    width: 70%;
+}
+
+/* Login */
+#login li .link {
+    margin-top: 5px;
+}
+
+.input_login{
+    border-radius: 5px;
+    border: outset;
+}
+#login-username, #login-password{
+    color: #16292b;
+    position: relative;
+    top: -2.5em;
+    left: -0.2em;
+    cursor: auto;
+    transition: 0.3s ease all
+}
+#register-link{
+    color: #16292b;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.account{
+    color: #16292b;
+    position: relative;
+    top: 0em;
+    left: 0em;
+}
+
+
+/* Misc */
+.clear {
+    clear: both;
+}
+
+/*Register*/
+.container-register{
+    background: #fff;
+    width: 450px;
+    padding: 1.5rem;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 1, 0.9);
+}
+
+form{
+    margin:0 2rem;
+}
+
+.form-title{
+    color: #16292b;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1.3rem;
+    margin-bottom: 0.4rem;
+}
+input{
+    color: #16292b;
+    width: 93%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #16292b;
+    padding-left: 1.5rem;
+    font-size:15px
+}
+
+.input-group{
+    padding: 1% 0;
+    position: relative;
+}
+
+.input-group i{
+    position: absolute;
+    color: #16292b;
+}
+
+input:focus{
+    background-color: transparent;
+    outline: transparent;
+    border-bottom: 2px solid #16292b;
+}
+
+input::placeholder{
+    color: transparent;
+}
+label{
+    color: #757575;
+    position: relative;
+    left: 2.2em;
+    top: -1.5em;
+    cursor: auto;
+    transition: 0.3s ease all;
+}
+
+#usertype{
+    color: #16292b;
+    position: relative;
+    width: 100%;
+    height: 25px;
+    cursor: auto;
+    transition: 0.3s ease all;
+}
+
+
+input:focus~label,input:not(:placeholder-shown)~label{
+    left: 1.2em;
+    top: -3em;
+    color: #16292b;
+    font-size: 15px;
+}
+
+.btn{
+    font-size: 1.1rem;
+    padding: 8px 0;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: #16292b;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    transition: 0.9s;
+    margin-bottom: 10px;
+}
+.btn:hover{
+    background-color: #2d5156;
+}
+
+
+/*Search*/
+#iSearch{
+    position: relative;
+    top: -1.65em;
+    left: -14.5em;
+    color: #16292b;
+}
+#live_search{
+    border-radius: 30px;
+    height: 30px; 
+    width: 400px; 
+    border: inset;
+    background: white;
+    color: #16292b;
+}
+#live_search::placeholder{
+    color: #16292b;
+}
+
+/*slike*/
+.images{
+    width: 100%;
+    height: 50%;
+    border-radius:10px 10px 0 0;
+    /*mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 98%, rgba(0, 0, 0, 0) 100%);*/
+}
+.festival-images{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 5px 3px 3px;
+}
+
+/*edit profil*/
+/*profile image*/
+.profile_image{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+header .profile_image{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    position: absolute;
+    top:15px;
+    transition: all 0.9s ease;
+}
+header .profile_image:hover{
+    transform: scale(1.2);
+}
+
+
+.edit_profil{
+    justify-self: center;
+    height:570px; 
+    width:500px;
+    padding-top: 20px;
+    background-color: #ffffffa1;
+    border-radius: 10px;
+    box-shadow: 0 20px 20px rgba(0, 0, 1, 0.9);
+
+}
+
+
+
+/*pregled festivala*/
+.home-page{
+    display: flex;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.pregled-festivala{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*aside*/
+.strana{
+    padding: 10px 50px 0px 0px;
+    margin: 0px;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+/*linkovi sa strane*/
+.lista-strana{ 
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 1, 0.9);
+    text-decoration: none;
+    position: fixed;
+    width: 9%;
+    left: 15px;
+    background-color: #15282bbf;
+}
+
+
+
+/*Footer*/
+footer{
+    color: white;
+    font-size: 14px;
+    justify-items: center;
+}
+footer a:link,header a:visited {
+    text-decoration: none;
+    color:#fff;
+    font-size: 15px;
+}

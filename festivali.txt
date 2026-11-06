@@ -1,0 +1,2 @@
+fest.php služi za prikaz detalja pojedinačnog festivala
+dodaj_festival.php omogućava administratoru da doda novi festival, obrađuje podatke iz forme, čuva ih u bazi i odmah osvežava prikaz festivala
